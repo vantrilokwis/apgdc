@@ -199,7 +199,7 @@ header {
   width: 150px;
 }
 
-#nav{
+nav {
   margin: 0;
   padding: 0;
   display: flex;
@@ -207,7 +207,7 @@ header {
   font-family: 'Untitled Medium';
 }
 
-#nav li {
+nav li {
   font-size: 1.25rem;
   padding-bottom: 18px;
 }
@@ -227,7 +227,7 @@ footer {
 /* Logo/Nav Float */
 
 #logo,
-#nav {
+nav {
   width: 42%;
   }
 
@@ -235,11 +235,11 @@ footer {
   float: left;
 }
 
-#nav {
+nav {
   float:right;
 }
 
-/* Back/Next Float */
+/* Back/Next Float (to come on wider screens) */
 
 
 /* Float Clearfix */
