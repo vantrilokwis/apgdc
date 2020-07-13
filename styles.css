@@ -150,7 +150,7 @@ header {
   margin: 40px auto 0;
 }
 
-.image-grid {
+.grid {
   display: flex;
   flex-wrap: wrap;
   line-height: 0;
