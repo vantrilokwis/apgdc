@@ -213,7 +213,7 @@ header {
   NAVIGATION
   ======================================*/
 
-#logo img{
+.logo img{
   width: 150px;
 }
 
@@ -248,12 +248,12 @@ footer {
 
 /* Logo/Nav Float */
 
-#logo,
+.logo,
 nav {
   width: 42%;
   }
 
-#logo {
+.logo {
   float: left;
 }
 
