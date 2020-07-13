@@ -39,8 +39,6 @@
 body {
   background-color: rgb(74, 31, 91);
   color: #fff;
-  /* margin: 0; */
-  /* padding: 0; */
   font-family: 'Untitled Regular';
   font-size: 1.25em;
 }
@@ -57,7 +55,7 @@ p {
 
 h1 {
   margin: 45px 0 0;
-  padding: 0;
+  /* padding: 0; */
   font-family: 'Untitled Bold';
   font-size: 4.5rem;
   letter-spacing: -0.2rem;
@@ -91,8 +89,11 @@ header {
   padding: 40px 8% 32px;
 }
 
+img {
+  width: 100%;
+}
+
 .container {
-  /* margin: 0; */
   padding: 60px 8% 65px;
 }
 
@@ -128,12 +129,6 @@ header {
   line-height: 0;
 }
 
-.image img {
-  width: 100%;
-  object-fit: cover;
-  /* max-height: 600px; */
-}
-
 .callout h2 {
   text-align: center;
 }
@@ -153,11 +148,11 @@ header {
 .grid {
   display: flex;
   flex-wrap: wrap;
-  line-height: 0;
 }
 
 .two-up {
   width: 50%;
+  margin: -1px 0; /*Hack for weird partial pixel that was showing between rows.*/
 }
 
 .email {
