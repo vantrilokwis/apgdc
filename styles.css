@@ -155,6 +155,17 @@ img {
   margin: -1px 0; /*Hack for weird partial pixel that was showing between rows.*/
 }
 
+.credits {
+  font-size: 0.75rem;
+  font-family: 'Untitled Regular';
+  line-height: 1.15rem;
+  width: 80%;
+  border-bottom: 1px solid #9e6bae;
+  margin: 24px 8% 0;
+  padding: 0 0 25px;
+  text-align: center;
+}
+
 .email {
   text-align: center;
   padding-top: 0;
