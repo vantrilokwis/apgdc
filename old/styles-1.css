@@ -84,23 +84,25 @@ h3 {
 
 header {
   background: linear-gradient(to right, rgba(74,31,91,0.3), rgba(74,31,91,0.3)),
-              url('img/coop/coop-header.jpg') no-repeat center;
+              url(img/coop/coop-header.jpg) no-repeat center;
   background-size: cover;
   padding: 40px 8% 32px;
 }
 
 img {
   width: 100%;
-  display: block;
 }
 
-.container,
-.intro {
-  padding: 0px 8%;
+.container {
+  padding: 60px 8% 65px;
 }
 
-.blurb h4 {
-  margin: 30px 0 15px;
+.top-container {
+  padding: 60px 8% 45px;
+}
+
+.intro h4 {
+  margin: 0 0 15px 0;
   font-family: 'Untitled Bold';
   font-size: 0.9rem;
   letter-spacing: 0.15rem;
@@ -108,18 +110,14 @@ img {
   color: #9e6bae;
 }
 
-.blurb p {
+.intro p {
   margin: 0 0 25px 0;
   font-size: 1.6rem;
   letter-spacing: -0.025rem;
   line-height: 2.2rem;
 }
 
-.scope ul {
-  margin: 0 0 35px;
-}
-
-.scope li {
+.intro-list li {
   font-family: 'Untitled Medium';
   font-size: 0.7em;
   display: inline-block;
@@ -127,20 +125,38 @@ img {
   color: #9e6bae;
 }
 
+.image {
+  line-height: 0;
+}
+
+.callout h2 {
+  text-align: center;
+}
+
+.callout p {
+  font-size: 1.3rem;
+  letter-spacing: -0.025rem;
+  line-height: 1.9rem;
+}
+
+.callout img {
+  height: 45px;
+  display: block;
+  margin: 40px auto 0;
+}
+
 .grid {
   display: flex;
   flex-wrap: wrap;
 }
 
-.logo-4x4 {
+.two-up {
   width: 50%;
-}
-
-.callout-blurb {
-  padding: 8%;
+  margin: -1px 0; /*Hack for weird partial pixel that was showing between rows.*/
 }
 
 .credits {
+  width: 80%;
   margin: 24px 8% 0;
   padding: 0 0 25px;
   font-family: 'Untitled Regular';
@@ -150,11 +166,10 @@ img {
   border-bottom: 1px solid #9e6bae;
 }
 
-.cta,
 .email {
-  padding: 8%;
   text-align: center;
-}
+  padding-top: 0;
+  }
 
 .email a.button {
   font-family: 'Untitled Bold';
@@ -167,17 +182,16 @@ img {
   border-radius: 500px;
 }
 
-.email p {
+.email span {
   font-size: 1.1rem;
 }
 
-.email p a.about-link {
+.email a.about-link {
   color: #9e6bae;
 }
 
 .back,
 .next {
-  width: 100%;
   background-color: #000;
   height: 120px;
   display: flex;
@@ -206,12 +220,14 @@ img {
   ======================================*/
 
 .logo img{
-width: 150px;
+  width: 150px;
 }
 
 nav {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: flex-end;
   font-family: 'Untitled Medium';
 }
 
@@ -219,7 +235,6 @@ nav li {
   font-size: 1.25rem;
   padding-bottom: 18px;
 }
-
 
 /*======================================
   FOOTER
@@ -233,51 +248,112 @@ footer {
   font-family: 'Untitled Regular';
 }
 
-
 /*======================================
   FLOATS
   ======================================*/
 
 /* Logo/Nav Float */
 
+.logo,
+nav {
+  width: 42%;
+  }
+
 .logo {
-  width: 73.5%;
   float: left;
 }
 
 nav {
-  width: 10.5%;
-  float: right;
+  float:right;
 }
-
-/* Callout Float (will be disabled on small screens) */
-
-.callout-image {
-  width: 50%;
-  float: left;
-}
-
-.callout-blurb {
-  width: 50%;
-  float: right;
-}
-
-/* Email Float (will be disabled on small screens) */
-
-/* .cta {
-  width: 50%;
-  float: left;
-}
-
-.email {
-  width: 50%;
-  float: right;
-} */
 
 /* Float Clearfix */
 
-.grid:after {
+.float:after {
   content: "";
   display: table;
   clear: both;
+}
+
+/*======================================
+  MEDIA QUERIES
+  ======================================*/
+
+/* Tablet (768) */
+
+@media (min-width: 768px) {
+
+header {
+  padding: 45px 10% 32px;
+}
+
+.container {
+  padding: 60px 10% 65px;
+}
+
+.top-container {
+  padding: 60px 10% 45px;
+}
+
+h1 {
+  font-size: 6rem;
+  letter-spacing: -0.25rem;
+  line-height: 6.2rem;
+}
+
+.intro h4 {
+margin: 0 0 20px 0;
+font-size: 1.25rem;
+letter-spacing: 0.26rem;
+}
+
+.intro p {
+  margin: 0 0 35px 0;
+  font-size: 2.4rem;
+  letter-spacing: -0.025rem;
+  line-height: 3rem;
+}
+
+.intro-list li {
+  font-size: 1.0em;
+  padding: 0 10px 5px 0;
+}
+
+/* .floated-image {
+  display: flex;
+} */
+
+.floated-image img {
+  width: 100%;
+}
+
+.floated-image,
+.callout {
+  width: 50%;
+  }
+
+.floated-image{
+  float: left;
+}
+
+.callout {
+  float:right;
+}
+
+}
+
+/* Laptop (1024) */
+
+@media (min-width: 1024px) {
+
+header {
+  padding: 45px 15% 32px;
+}
+
+.container {
+  padding: 60px 15% 65px;
+}
+
+.top-container {
+  padding: 60px 15% 45px;
 }
