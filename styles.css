@@ -117,7 +117,7 @@ img {
   line-height: 2.2rem;
 }
 
-.intro li {
+.intro-list li {
   font-family: 'Untitled Medium';
   font-size: 0.7em;
   display: inline-block;
@@ -267,9 +267,6 @@ nav {
   float:right;
 }
 
-/* Back/Next Float (to come on wider screens) */
-
-
 /* Float Clearfix */
 
 .float:after {
@@ -284,10 +281,10 @@ nav {
 
 /* Tablet (768) */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
 header {
-  padding: 60px 10% 32px;
+  padding: 45px 10% 32px;
 }
 
 .container {
@@ -306,7 +303,7 @@ h1 {
 
 .intro h4 {
 margin: 0 0 20px 0;
-font-size: 1.3rem;
+font-size: 1.25rem;
 letter-spacing: 0.26rem;
 }
 
@@ -317,13 +314,46 @@ letter-spacing: 0.26rem;
   line-height: 3rem;
 }
 
-.intro li {
-  font-size: 1.1em;
-  display: inline-block;
+.intro-list li {
+  font-size: 1.0em;
   padding: 0 10px 5px 0;
-  color: #9e6bae;
+}
+
+/* .floated-image {
+  display: flex;
+} */
+
+.floated-image img {
+  width: 100%;
+}
+
+.floated-image,
+.callout {
+  width: 50%;
+  }
+
+.floated-image{
+  float: left;
+}
+
+.callout {
+  float:right;
+}
+
 }
 
 /* Laptop (1024) */
 
+@media (min-width: 1024px) {
+
+header {
+  padding: 45px 15% 32px;
+}
+
+.container {
+  padding: 60px 15% 65px;
+}
+
+.top-container {
+  padding: 60px 15% 45px;
 }
