@@ -127,7 +127,7 @@ img {
   color: #9e6bae;
 }
 
-.grid {
+.grid-wrap {
   display: flex;
   flex-wrap: wrap;
 }
@@ -152,7 +152,7 @@ img {
 
 .cta,
 .email {
-  padding: 8%;
+  padding: 25px 8%;
   text-align: center;
 }
 
@@ -249,6 +249,7 @@ nav {
   width: 10.5%;
   float: right;
 }
+
 
 /* Callout Float (will be disabled on small screens) */
 
