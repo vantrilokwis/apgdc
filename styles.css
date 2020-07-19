@@ -62,7 +62,7 @@ h1 {
   font-family: 'Untitled Bold';
   font-size: 4.5rem;
   letter-spacing: -0.2rem;
-  line-height: 4.6rem;
+  line-height: 4.8rem;
   overflow: visible;
 }
 
@@ -140,13 +140,21 @@ img {
   width: 50%;
 }
 
+.callout {
+  padding: 10% 8%;
+}
 .callout-blurb {
   /* font-size: 1.6rem; */
-  padding: 10% 8%;
+  /* padding: 10% 8%; */
 }
 
 .callout-blurb h2 {
   text-align: center;
+}
+
+.callout-icon {
+  padding: 6% 22% 0;
+  /* margin: 0 auto 15%; */
 }
 
 .credits {
@@ -172,9 +180,9 @@ img {
   margin: auto;
 }
 
-.cta-image {
+/* .cta-image {
  display: none;
-}
+} */
 
 /* .cta img {
   height: 35px;
@@ -295,7 +303,7 @@ nav {
 
 
 /*======================================
-  MEDIA QUERIES
+  MEDIA QUERIES / LEVEL 1
   ======================================*/
 
 @media only screen and (min-width: 660px) {
@@ -316,7 +324,7 @@ nav {
 
 .cta {
   padding: 9% 8% 11%;
-  text-align: left;
+  max-width: 700px;
 }
 
 /* Back/Next Float */
@@ -333,11 +341,14 @@ nav {
 
 }
 
+/*======================================
+  MEDIA QUERIES / LEVEL 2
+  ======================================*/
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 961px) {
 
 h1 {
-  font-size: 5.5rem;
+  font-size: 5.25rem;
   line-height: 5.65rem;
 }
 
@@ -357,28 +368,36 @@ h1 {
 }
 
 .scope li {
-  font-size: 1.18rem;
+  font-size: 1.25rem;
 }
 
 .cta {
 padding: 6.5% 8% 8.5%;
+max-width: 750px;
+}
+
+.callout {
+  display: flex;
+justify-content: center;
+align-items: center;
 }
 
 /* Callout Float */
 
-.callout-image {
-  width: 50%;
-  float: left;
+.callout-icon {
+  width: 40%;
+  float: right;
+  padding: 0 0 0 8%;
 }
 
 .callout-blurb {
-  width: 50%;
-  float: right;
+  width: 60%;
+  float: left;
 }
 
 /* Email Float */
 
-.cta-email {
+/* .cta-email {
   width: 70%;
   padding-left: 6%;
   float: right;
@@ -394,12 +413,26 @@ padding: 6.5% 8% 8.5%;
 .cta-image img {
   max-height: 300px;
   max-width: 250px;
-}
+} */
 
 }
 
 
-@media only screen and (min-width: 1024px) {
+/*======================================
+  MEDIA QUERIES / LEVEL 3
+  ======================================*/
+
+@media only screen and (min-width: 1025px) {
+
+nav li {
+  padding-bottom: 15px;
+}
+
+h1 {
+  font-size: 5.5rem;
+  line-height: 6.1rem;
+  margin-top: 120px;
+}
 
 /* Scope Float */
 
@@ -416,17 +449,23 @@ padding: 6.5% 8% 8.5%;
 }
 
 .scope ul {
-  margin: 4% 0 0;
+  margin: 8% 0 0;
 }
 
 .scope li {
+  display: block;
   padding-bottom: 15px;
-}
 
 }
 
+}
 
-@media only screen and (min-width: 1440px) {
+
+/*======================================
+  MEDIA QUERIES / LEVEL 4
+  ======================================*/
+
+@media only screen and (min-width: 1441px) {
 
 h1 {
   font-size: 6.5rem;
