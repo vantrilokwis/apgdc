@@ -51,6 +51,9 @@ a {
 p {
   margin: 0;
   padding: 0;
+  font-size: 1.6rem;
+  letter-spacing: -0.025rem;
+  line-height: 2.2rem;
 }
 
 h1 {
@@ -64,19 +67,31 @@ h1 {
 }
 
 h2 {
-  margin: 0 0 15px 0;
-  padding: 0;
+  margin: 0;
+  padding: 0 0 30px 0;
   font-family: 'Untitled Bold';
-  font-size: 2rem;
+  font-size: 2.3rem;
   letter-spacing: -0.05rem;
 }
 
 h3 {
   font-family: 'Untitled Bold';
   letter-spacing: -.03rem;
-  font-size: 1.75rem;
+  font-size: 1.8rem;
 }
 
+h3 {
+  font-family: 'Untitled Bold';
+  letter-spacing: -.03rem;
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-family: 'Untitled Bold';
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+}
 
 /*======================================
   LAYOUT STYLES
@@ -100,23 +115,12 @@ img {
 }
 
 .blurb h4 {
-  margin: 30px 0 15px;
-  font-family: 'Untitled Bold';
-  font-size: 0.9rem;
-  letter-spacing: 0.15rem;
-  text-transform: uppercase;
+  margin: 14% 0 25px;
   color: #9e6bae;
 }
 
-.blurb p {
-  margin: 0 0 25px 0;
-  font-size: 1.6rem;
-  letter-spacing: -0.025rem;
-  line-height: 2.2rem;
-}
-
 .scope ul {
-  margin: 0 0 35px;
+  margin: 25px 0 16%;
 }
 
 .scope li {
@@ -137,24 +141,47 @@ img {
 }
 
 .callout-blurb {
-  padding: 8%;
+  /* font-size: 1.6rem; */
+  padding: 10% 8%;
+}
+
+.callout-blurb h2 {
+  text-align: center;
 }
 
 .credits {
   margin: 24px 8% 0;
   padding: 0 0 25px;
-  font-family: 'Untitled Regular';
-  font-size: 0.75rem;
-  line-height: 1.15rem;
+  /* font-family: 'Untitled Regular';
+  font-size: 0.5rem;
+  line-height: 1.15rem; */
   text-align: center;
   border-bottom: 1px solid #9e6bae;
 }
 
-.cta,
-.email {
-  padding: 25px 8%;
-  text-align: center;
+.credits p {
+  font-size: 0.75rem;
+  letter-spacing: 0.02rem;
+  line-height: 1.15rem;
+  padding: 0;
 }
+
+.cta-email {
+  padding: 14% 8% 18%;
+  text-align: center;
+  margin: auto;
+}
+
+.cta img {
+  height: 35px;
+  width: 35px;
+  margin: 20px auto 0;
+}
+
+/* .email {
+  padding: 0 8% 22%;
+  text-align: center;
+} */
 
 .email a.button {
   font-family: 'Untitled Bold';
@@ -162,13 +189,13 @@ img {
   letter-spacing: -0.05rem;
   display: inline-block;
   padding: 20px 65px;
-  margin-bottom: 20px;
+  margin: 30px 0 20px;
   border: 4px solid #9e6bae;
   border-radius: 500px;
 }
 
 .email p {
-  font-size: 1.1rem;
+  font-size: 1.0rem;
 }
 
 .email p a.about-link {
@@ -241,17 +268,71 @@ footer {
 /* Logo/Nav Float */
 
 .logo {
-  width: 73.5%;
+  width: 63%;
   float: left;
 }
 
 nav {
-  width: 10.5%;
+  width: 21%;
   float: right;
 }
 
+/* Float Clearfix */
 
-/* Callout Float (will be disabled on small screens) */
+.float:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*======================================
+  MEDIA QUERIES
+  ======================================*/
+
+@media only screen and (min-width: 680px) {
+
+.cta-email {
+  padding: 10% 8% 12%;
+  max-width: 800px;
+}
+
+/* Back/Next Float */
+
+.back {
+  width: 50%;
+  float: left;
+}
+
+.next {
+  width: 50%;
+  float: right;
+}
+
+}
+
+
+@media only screen and (min-width: 900px) {
+
+.cta-email {
+  padding: 7% 8% 10%;
+  max-width: 1200px;
+}
+
+/* .cta {
+  text-align: left;
+  padding-right: 5%;
+} */
+
+/* .cta img {
+  display: none;
+} */
+
+/* .cta p {
+  margin: 0;
+} */
+
+/* Callout Float */
 
 .callout-image {
   width: 50%;
@@ -263,22 +344,16 @@ nav {
   float: right;
 }
 
-/* Email Float (will be disabled on small screens) */
+/* Email Float */
 
 /* .cta {
-  width: 50%;
+  width: 65%;
   float: left;
 }
 
 .email {
-  width: 50%;
+  width: 35%;
   float: right;
 } */
 
-/* Float Clearfix */
-
-.grid:after {
-  content: "";
-  display: table;
-  clear: both;
 }
