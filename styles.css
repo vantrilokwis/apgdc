@@ -37,7 +37,7 @@
 }
 
 body {
-  background-color: rgb(74, 31, 91);
+  background-color: #4A1F5B;
   color: #fff;
   font-family: 'Untitled Regular';
   font-size: 1.25em;
@@ -114,7 +114,7 @@ img {
   padding: 0px 8%;
 }
 
-.blurb h4 {
+.intro h4 {
   margin: 14% 0 25px;
   color: #9e6bae;
 }
@@ -166,24 +166,28 @@ img {
   padding: 0;
 }
 
-.cta-email {
+.cta {
   padding: 14% 8% 18%;
   text-align: center;
   margin: auto;
 }
 
-.cta img {
+.cta-image {
+ display: none;
+}
+
+/* .cta img {
   height: 35px;
   width: 35px;
   margin: 20px auto 0;
-}
+} */
 
 /* .email {
   padding: 0 8% 22%;
   text-align: center;
 } */
 
-.email a.button {
+.cta-email a.button {
   font-family: 'Untitled Bold';
   font-size: 1.8rem;
   letter-spacing: -0.05rem;
@@ -194,11 +198,15 @@ img {
   border-radius: 500px;
 }
 
-.email p {
+.button:hover {
+  background-color: #542368;
+}
+
+.cta-email span {
   font-size: 1.0rem;
 }
 
-.email p a.about-link {
+.cta-email p a.about-link {
   color: #9e6bae;
 }
 
@@ -290,11 +298,25 @@ nav {
   MEDIA QUERIES
   ======================================*/
 
-@media only screen and (min-width: 680px) {
+@media only screen and (min-width: 660px) {
 
-.cta-email {
-  padding: 10% 8% 12%;
-  max-width: 800px;
+.blurb p {
+  font-size: 2rem;
+  letter-spacing: -0.02rem;
+  line-height: 2.6rem;
+}
+
+.intro h4 {
+  margin: 9% 0 25px;
+}
+
+.scope ul {
+  margin: 25px 0 10%;
+}
+
+.cta {
+  padding: 9% 8% 11%;
+  text-align: left;
 }
 
 /* Back/Next Float */
@@ -312,25 +334,35 @@ nav {
 }
 
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 960px) {
 
-.cta-email {
-  padding: 7% 8% 10%;
-  max-width: 1200px;
+h1 {
+  font-size: 5.5rem;
+  line-height: 5.65rem;
 }
 
-/* .cta {
-  text-align: left;
-  padding-right: 5%;
-} */
+.blurb p {
+  font-size: 2.2rem;
+  letter-spacing: -0.01rem;
+  line-height: 3rem;
+}
 
-/* .cta img {
-  display: none;
-} */
+.intro h4 {
+  /* margin: 9% 0 30px; */
+  font-size: 1.25rem;
+}
 
-/* .cta p {
-  margin: 0;
-} */
+.scope ul {
+  margin: 35px 0 10%;
+}
+
+.scope li {
+  font-size: 1.18rem;
+}
+
+.cta {
+padding: 6.5% 8% 8.5%;
+}
 
 /* Callout Float */
 
@@ -346,14 +378,59 @@ nav {
 
 /* Email Float */
 
-/* .cta {
-  width: 65%;
-  float: left;
+.cta-email {
+  width: 70%;
+  padding-left: 6%;
+  float: right;
 }
 
-.email {
-  width: 35%;
+.cta-image {
+  width: 30%;
+  float: left;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-image img {
+  max-height: 300px;
+  max-width: 250px;
+}
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+/* Scope Float */
+
+.blurb {
+  float: left;
+  width: 80%;
+  padding-right: 7%;
+  margin-bottom: 9%;
+}
+
+.scope {
   float: right;
-} */
+  width: 20%;
+}
+
+.scope ul {
+  margin: 4% 0 0;
+}
+
+.scope li {
+  padding-bottom: 15px;
+}
+
+}
+
+
+@media only screen and (min-width: 1440px) {
+
+h1 {
+  font-size: 6.5rem;
+  line-height: 6.9rem;
+}
 
 }
