@@ -152,14 +152,19 @@ img {
   text-align: center;
 }
 
+.callout-blurb a {
+  color: #9e6bae;
+}
+
 .callout-image {
-  background: url('img/coop/coop-header.jpg');
+  background: url('img/coop/temp-oranges.jpg');
   display: flex;
   background-size: cover;
-justify-content: center;
-align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 12% 0;
   margin: 15px;
+  border-radius: 5px;
 }
 
 .callout-image img {
@@ -303,7 +308,7 @@ footer {
 
 
 /*======================================
-  FLOATS
+  UNIVERSAL FLOATS
   ======================================*/
 
 /* Logo/Nav Float */
@@ -333,6 +338,11 @@ nav {
 
 @media only screen and (min-width: 660px) {
 
+  h2 {
+  font-size: 2.8rem;
+  letter-spacing: -.1rem;
+  }
+
 .blurb p {
   font-size: 2rem;
   letter-spacing: -0.02rem;
@@ -347,9 +357,13 @@ nav {
   margin: 25px 0 10%;
 }
 
+.callout-blurb {
+  padding: 10%;
+}
+
 .cta {
-  padding: 9% 8% 11%;
-  max-width: 700px;
+  padding: 9% 0% 11%;
+  max-width: 550px;
 }
 
 /* Back/Next Float */
@@ -370,11 +384,38 @@ nav {
   MEDIA QUERIES / LEVEL 2
   ======================================*/
 
+@media only screen and (min-width: 769px) {
+
+h1 {
+  margin-right: 5%;
+}
+
+/* h2 {
+font-size: 2.8rem;
+letter-spacing: -.1rem;
+} */
+
+.callout-blurb {
+  padding: 10% 12%;
+}
+
+}
+
+/*======================================
+  MEDIA QUERIES / LEVEL 3
+  ======================================*/
+
 @media only screen and (min-width: 961px) {
 
 h1 {
   font-size: 5.25rem;
   line-height: 5.65rem;
+  margin-right: 10%;
+}
+
+h2 {
+  font-size: 3.25rem;
+  letter-spacing: -.12rem;
 }
 
 .blurb p {
@@ -396,11 +437,6 @@ h1 {
   font-size: 1.25rem;
 }
 
-.cta {
-padding: 6.5% 8% 8.5%;
-max-width: 750px;
-}
-
 .callout {
   display: flex;
 justify-content: center;
@@ -412,7 +448,7 @@ align-items: center;
 .callout-image {
   width: 40%;
   float: right;
-  padding: 16% 0; /*This padding is kind of a hack*/
+  padding: 12.5% 0; /*This padding sets the height of parent div (unless .callout-blurb text runs long)*/
 }
 
 .callout-image img {
@@ -422,8 +458,24 @@ align-items: center;
 .callout-blurb {
   width: 60%;
   float: left;
+  padding: 0 8%;
 }
 
+/* Image 50/50 float */
+
+.float-50-left {
+  width: 50%;
+  float: left;
+}
+
+.float-50-right {
+  width: 50%;
+  float: right;
+}
+
+.cta {
+  max-width: 700px;
+}
 
 /* Email Float */
 
@@ -449,7 +501,7 @@ align-items: center;
 
 
 /*======================================
-  MEDIA QUERIES / LEVEL 3
+  MEDIA QUERIES / LEVEL 4
   ======================================*/
 
 @media only screen and (min-width: 1025px) {
@@ -492,10 +544,10 @@ h1 {
 
 
 /*======================================
-  MEDIA QUERIES / LEVEL 4
+  MEDIA QUERIES / LEVEL 5
   ======================================*/
 
-@media only screen and (min-width: 1441px) {
+@media only screen and (min-width: 1300px) {
 
 h1 {
   font-size: 6.5rem;
@@ -503,9 +555,14 @@ h1 {
 }
 
 h2 {
+  font-size: 3.75rem;
+  letter-spacing: -.14rem;
+}
+
+/* h2 {
   font-size: 2.7em;
   letter-spacing: -.1rem;
-}
+} */
 
 p {
   line-height: 2.45rem;
@@ -518,4 +575,28 @@ p {
 .scope ul {
   margin: 6% 0 0;
 }
+}
+
+/*======================================
+  MEDIA QUERIES / LEVEL 6
+  ======================================*/
+
+@media only screen and (min-width: 1441px) {
+
+h1 {
+  margin-right: 15%;
+}
+
+.callout-image {
+  padding: 10% 0;
+}
+
+.callout-image img {
+  width: 45%;
+}
+
+.cta {
+max-width: 850px;
+}
+
 }
