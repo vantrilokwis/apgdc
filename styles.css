@@ -4,27 +4,27 @@
 
 @font-face {
   font-family: 'Untitled Regular';
-  src: url('fonts/untitled-sans-test-regular.woff') format('woff');
+  src: url('fonts/untitled-sans-web-regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Untitled Regular Italic';
-  src: url('fonts/untitled-sans-test-regular-italic.woff') format('woff');
+  src: url('fonts/untitled-sans-web-regular-italic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Untitled Medium';
-  src: url('fonts/untitled-sans-test-medium.woff') format('woff');
+  src: url('fonts/untitled-sans-web-medium.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Untitled Medium Italic';
-  src: url('fonts/untitled-sans-test-regular-italic.woff') format('woff');
+  src: url('fonts/untitled-sans-web-medium-italic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Untitled Bold';
-  src: url('fonts/untitled-sans-test-bold.woff') format('woff');
+  src: url('fonts/untitled-sans-web-bold.woff') format('woff');
 }
 
 
@@ -334,12 +334,35 @@ nav {
   MEDIA QUERIES / LEVEL 1
   ======================================*/
 
-@media only screen and (min-width: 660px) {
+@media only screen and (min-width: 650px) {
+
+h1 {
+  font-size: 6.5rem;
+  letter-spacing: -0.2rem;
+  line-height: 6.7rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+  letter-spacing: 0.25rem;
+  margin: 9% 0 25px;
+}
 
 h3 {
   font-size: 3.6rem;
-  letter-spacing: -.05rem;
-  }
+  letter-spacing: -0.05rem;
+}
+
+h4 {
+  font-size: 2.6rem;
+  letter-spacing: -0.03rem;
+}
+
+p {
+  font-size: 2.25rem;
+  letter-spacing: -0.025rem;
+  line-height: 3.1rem;
+}
 
 .blurb p {
   font-size: 2.6rem;
@@ -347,11 +370,10 @@ h3 {
   line-height: 3.5rem;
 }
 
-h2 {
-  font-size: 1.7rem;
-  margin: 9% 0 25px;
-  letter-spacing: 0.25rem;
-}
+/* h3 {
+  font-size: 3.6rem;
+  letter-spacing: -.05rem;
+  } */
 
 .scope ul {
   margin: 25px 0 10%;
@@ -388,20 +410,49 @@ h2 {
   MEDIA QUERIES / LEVEL 2
   ======================================*/
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 750px) {
 
-h1 {
+  h1 {
+    font-size: 6.833rem;
+    /* letter-spacing: -0.2rem; */
+    line-height: 7.114rem;
+  }
+
+  h2 {
+    font-size: 1.757rem;
+    letter-spacing: 0.2643rem;
+    /* margin: 9% 0 25px; */
+  }
+
+  h3 {
+    font-size: 3.8rem;
+    letter-spacing: -0.0629rem;
+  }
+
+  /* h4 {
+    font-size: 2.6rem;
+    letter-spacing: -0.03rem;
+  } */
+
+  p {
+    font-size: 2.25rem;
+    letter-spacing: -0.025rem;
+    line-height: 3.1rem;
+  }
+
+  .blurb p {
+    font-size: 2.725rem;
+    /* letter-spacing: -0.02rem; */
+    line-height: 3.6875rem;
+  }
+
+  /* h1 {
   margin-right: 5%;
 }
 
 h3 {
   font-size: 4rem;
   letter-spacing: -.08rem;
-}
-
-/* h2 {
-font-size: 2.8rem;
-letter-spacing: -.1rem;
 } */
 
 .callout-blurb {
@@ -411,19 +462,94 @@ letter-spacing: -.1rem;
 }
 
 /*======================================
+  MEDIA QUERIES / LEVEL 2
+  ======================================*/
+
+@media only screen and (min-width: 850px) {
+
+h1 {
+  font-size: 7.166rem;
+  /* letter-spacing: -0.2rem; */
+  line-height: 7.528rem;
+}
+
+h2 {
+  font-size: 1.814rem;
+  letter-spacing: 0..2786rem;
+  /* margin: 9% 0 25px; */
+}
+
+h3 {
+  font-size: 4rem;
+  letter-spacing: -0.0758rem;
+}
+
+/* h4 {
+  font-size: 2.6rem;
+  letter-spacing: -0.03rem;
+} */
+
+p {
+  font-size: 2.35rem;
+  letter-spacing: -0.035rem;
+  line-height: 3.243rem;
+}
+
+.blurb p {
+  font-size: 2.85rem;
+  /* letter-spacing: -0.02rem; */
+  line-height: 3.875rem;
+}
+
+}
+
+/*======================================
   MEDIA QUERIES / LEVEL 3
   ======================================*/
 
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 950px) {
 
-h1 {
+  h1 {
+    font-size: 7.5rem;
+    /* letter-spacing: -0.2rem; */
+    line-height: 7.942rem;
+  }
+
+  h2 {
+    font-size: 1.871rem;
+    letter-spacing: 0.2929rem;
+    /* margin: 9% 0 25px; */
+  }
+
+  h3 {
+    font-size: 4.2rem;
+    letter-spacing: -0.0887rem;
+  }
+
+  h4 {
+    font-size: 2.8rem;
+    /* letter-spacing: -0.03rem; */
+  }
+
+  p {
+    font-size: 2.4rem;
+    letter-spacing: -0.04rem;
+    line-height: 3.3145rem;
+  }
+
+  .blurb p {
+    font-size: 2.975rem;
+    /* letter-spacing: -0.02rem; */
+    line-height: 4.0625rem;
+  }
+
+/* h1 {
   font-size: 7.5rem;
   line-height: 8rem;
   margin-right: 10%;
 }
 
 h2 {
-  /* margin: 9% 0 30px; */
   font-size: 2.0rem;
   letter-spacing: 0.3rem;
 }
@@ -440,7 +566,7 @@ h4 {
   font-size: 3rem;
   letter-spacing: -0.06rem;
   line-height: 4rem;
-}
+} */
 
 
 
