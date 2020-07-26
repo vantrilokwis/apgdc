@@ -226,6 +226,7 @@ h2 {
 .cta-email p.small {
   font-size: 1.5rem;
   line-height: 2.1rem;
+  letter-spacing: -0.03rem;
 }
 
 .cta-email p a.about-link {
@@ -331,7 +332,96 @@ nav {
 
 
 /*======================================
-  MEDIA QUERIES / LEVEL 1
+  MEDIA QUERIES / LEVEL 350
+  ======================================*/
+
+@media only screen and (min-width: 350px) {
+
+h2 {
+  margin-top: 14%;
+}
+
+.scope ul {
+  margin-bottom: 16%;
+}
+
+p {
+  font-size: 2.25rem;
+}
+
+/* .blurb p {
+  font-size: 2.45rem;
+  letter-spacing: -0.025rem;
+  line-height: 3.1rem;
+} */
+
+}
+
+/*======================================
+  MEDIA QUERIES / LEVEL 450
+  ======================================*/
+
+@media only screen and (min-width: 450px) {
+
+h2 {
+  margin-top: 12.333%;
+}
+
+h3 {
+  font-size: 3.759rem;
+  letter-spacing: -0.06rem;
+}
+
+p {
+  font-size: 2.2917rem;
+}
+
+.blurb p {
+  font-size: 2.556rem;
+  letter-spacing: -0.026rem;
+  line-height: 3.274rem;
+}
+
+.scope ul {
+  margin-bottom: 14%;
+}
+
+
+}
+
+/*======================================
+  MEDIA QUERIES / LEVEL 550
+  ======================================*/
+
+@media only screen and (min-width: 550px) {
+
+h2 {
+  margin-top: 10.67%;
+}
+
+h3 {
+  font-size: 3.918rem;
+  letter-spacing: -0.069rem;
+}
+
+p {
+  font-size: 2.3334rem;
+}
+
+.blurb p {
+  font-size: 2.663rem;
+  letter-spacing: -0.028rem;
+  line-height: 3.448rem;
+}
+
+.scope ul {
+  margin-bottom: 12%;
+}
+}
+
+
+/*======================================
+  MEDIA QUERIES / LEVEL 650
   ======================================*/
 
 @media only screen and (min-width: 650px) {
@@ -349,8 +439,8 @@ h2 {
 }
 
 h3 {
-  font-size: 3.6rem;
-  letter-spacing: -0.05rem;
+  font-size: 4.077rem;
+  letter-spacing: -0.079rem;
 }
 
 h4 {
@@ -359,15 +449,15 @@ h4 {
 }
 
 p {
-  font-size: 2.25rem;
+  font-size: 2.3751rem;
   letter-spacing: -0.025rem;
   line-height: 3.1rem;
 }
 
 .blurb p {
-  font-size: 2.6rem;
-  letter-spacing: -0.02rem;
-  line-height: 3.5rem;
+  font-size: 2.769rem;
+  letter-spacing: -0.029rem;
+  line-height: 3.622rem;
 }
 
 /* h3 {
@@ -407,26 +497,26 @@ p {
 }
 
 /*======================================
-  MEDIA QUERIES / LEVEL 2
+  MEDIA QUERIES / LEVEL 750
   ======================================*/
 
 @media only screen and (min-width: 750px) {
 
   h1 {
     font-size: 6.833rem;
-    /* letter-spacing: -0.2rem; */
+    letter-spacing: -0.2055rem;
     line-height: 7.114rem;
   }
 
   h2 {
     font-size: 1.757rem;
     letter-spacing: 0.2643rem;
-    /* margin: 9% 0 25px; */
+    margin-top: 8.889%;
   }
 
   h3 {
-    font-size: 3.8rem;
-    letter-spacing: -0.0629rem;
+    font-size: 4.236rem;
+    letter-spacing: -0.089rem;
   }
 
   /* h4 {
@@ -435,15 +525,15 @@ p {
   } */
 
   p {
-    font-size: 2.25rem;
+    font-size: 2.4168rem;
     letter-spacing: -0.025rem;
-    line-height: 3.1rem;
+    line-height: 3.2rem;
   }
 
   .blurb p {
-    font-size: 2.725rem;
-    /* letter-spacing: -0.02rem; */
-    line-height: 3.6875rem;
+    font-size: 2.875rem;
+    letter-spacing: -0.03rem;
+    line-height: 3.796rem;
   }
 
   /* h1 {
@@ -462,26 +552,26 @@ h3 {
 }
 
 /*======================================
-  MEDIA QUERIES / LEVEL 2
+  MEDIA QUERIES / LEVEL 850
   ======================================*/
 
 @media only screen and (min-width: 850px) {
 
 h1 {
   font-size: 7.166rem;
-  /* letter-spacing: -0.2rem; */
+  letter-spacing: -0.211rem;
   line-height: 7.528rem;
 }
 
 h2 {
   font-size: 1.814rem;
   letter-spacing: 0..2786rem;
-  /* margin: 9% 0 25px; */
+  margin-top: 8.778%;
 }
 
 h3 {
-  font-size: 4rem;
-  letter-spacing: -0.0758rem;
+  font-size: 4.395rem;
+  letter-spacing: -0.099rem;
 }
 
 /* h4 {
@@ -490,58 +580,58 @@ h3 {
 } */
 
 p {
-  font-size: 2.35rem;
+  font-size: 2.4585rem;
   letter-spacing: -0.035rem;
-  line-height: 3.243rem;
+  line-height: 3.3rem;
 }
 
 .blurb p {
-  font-size: 2.85rem;
-  /* letter-spacing: -0.02rem; */
-  line-height: 3.875rem;
+  font-size: 2.982rem;
+  letter-spacing: -0.032rem;
+  line-height: 3.97rem;
 }
 
 }
 
 /*======================================
-  MEDIA QUERIES / LEVEL 3
+  MEDIA QUERIES / LEVEL 950
   ======================================*/
 
 @media only screen and (min-width: 950px) {
 
-  h1 {
-    font-size: 7.5rem;
-    /* letter-spacing: -0.2rem; */
-    line-height: 7.942rem;
-  }
+h1 {
+  font-size: 7.5rem;
+  letter-spacing: -0.2165rem;
+  line-height: 7.942rem;
+}
 
-  h2 {
-    font-size: 1.871rem;
-    letter-spacing: 0.2929rem;
-    /* margin: 9% 0 25px; */
-  }
+h2 {
+  font-size: 1.871rem;
+  letter-spacing: 0.2929rem;
+  margin-top: 8.667%;
+}
 
-  h3 {
-    font-size: 4.2rem;
-    letter-spacing: -0.0887rem;
-  }
+h3 {
+  font-size: 4.554rem;
+  letter-spacing: -0.108rem;
+}
 
-  h4 {
-    font-size: 2.8rem;
-    /* letter-spacing: -0.03rem; */
-  }
+h4 {
+  font-size: 2.8rem;
+  /* letter-spacing: -0.03rem; */
+}
 
-  p {
-    font-size: 2.4rem;
-    letter-spacing: -0.04rem;
-    line-height: 3.3145rem;
-  }
+p {
+  font-size: 2.5002rem;
+  letter-spacing: -0.04rem;
+  line-height: 3.4rem;
+}
 
-  .blurb p {
-    font-size: 2.975rem;
-    /* letter-spacing: -0.02rem; */
-    line-height: 4.0625rem;
-  }
+.blurb p {
+  font-size: 3.088rem;
+  letter-spacing: -0.033rem;
+  line-height: 4.144rem;
+}
 
 /* h1 {
   font-size: 7.5rem;
@@ -642,10 +732,10 @@ align-items: center;
 
 
 /*======================================
-  MEDIA QUERIES / LEVEL 4
+  MEDIA QUERIES / LEVEL 1050
   ======================================*/
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1050px) {
 
 nav li {
   padding-bottom: 15px;
@@ -654,9 +744,38 @@ nav li {
 }
 
 h1 {
-  font-size: 8rem;
-  line-height: 8.8rem;
+  font-size: 7.833rem;
+  letter-spacing: -0.222rem;
+  line-height: 8.356rem;
   margin-top: 120px;
+}
+
+h2 {
+  font-size: 1.928rem;
+  letter-spacing: 0.30725rem;
+  margin-top: 8.556%;
+}
+
+h3 {
+  font-size: 4.713rem;
+  letter-spacing: -0.118rem;
+}
+
+p {
+  font-size: 2.5419rem;
+  letter-spacing: -0.045rem;
+  line-height: 3.5rem;
+}
+
+.blurb p {
+  font-size: 3.194rem;
+  letter-spacing: -0.034rem;
+  line-height: 4.318rem;
+}
+
+.cta-email p.small {
+  font-size: 1.75rem;
+  letter-spacing: -0.035;
 }
 
 /* Scope Float */
@@ -665,7 +784,7 @@ h1 {
   float: left;
   width: 80%;
   padding-right: 7%;
-  margin-bottom: 12%;
+  margin-bottom: 11%;
 }
 
 .scope {
@@ -692,36 +811,135 @@ h1 {
 
 }
 
-
 /*======================================
-  MEDIA QUERIES / LEVEL 5
+  MEDIA QUERIES / LEVEL 1150
   ======================================*/
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1150px) {
 
 h1 {
-  font-size: 8.9rem;
-  line-height: 9.6rem;
+  font-size: 8.166rem;
+  letter-spacing: -0.228rem;
+  line-height: 8.77rem;
+}
+
+h2 {
+  font-size: 1.985rem;
+  letter-spacing: 0.322rem;
+  margin-top: 8.445%;
+}
+
+h3 {
+  font-size: 4.872rem;
+  letter-spacing: -0.128rem;
+}
+
+p {
+  font-size: 2.584rem;
+  letter-spacing: -0.05rem;
+  line-height: 3.6rem;
+}
+
+.blurb p {
+  font-size: 3.3rem;
+  letter-spacing: -0.035rem;
+  line-height: 4.492rem;
+}
+
+.blurb {
+  margin-bottom: 10.8%;
+}
+
+}
+
+/*======================================
+  MEDIA QUERIES / LEVEL 1250
+  ======================================*/
+
+@media only screen and (min-width: 1250px) {
+
+h1 {
+  font-size: 8.5rem;
+  letter-spacing: -0.233rem;
+  line-height: 9.184rem;
+}
+
+h2 {
+  font-size: 2.042rem;
+  letter-spacing: 0.3358rem;
+  margin-top: 8.334%;
+}
+
+h3 {
+  font-size: 5.031rem;
+  letter-spacing: -0.137rem;
+}
+
+p {
+  font-size: 2.625rem;
+  letter-spacing: -0.055rem;
+  line-height: 3.7rem;
+}
+
+.blurb p {
+  font-size: 3.407rem;
+  letter-spacing: -0.037rem;
+  line-height: 4.666rem;
+}
+
+.blurb {
+  margin-bottom: 10.6%;
+}
+
+.cta {
+padding: 8.75% 0% 10.75%;
+}
+
+}
+
+
+/*======================================
+  MEDIA QUERIES / LEVEL 1350
+  ======================================*/
+
+@media only screen and (min-width: 1350px) {
+
+h1 {
+  font-size: 8.833rem;
+  letter-spacing: -0.2385rem;
+  line-height: 9.598rem;
 }
 
 h2 {
   font-size: 2.1rem;
   letter-spacing: 0.35rem;
+  margin-top: 8.223%;
 }
 
 h3 {
-  font-size: 5rem;
-  letter-spacing: -.14rem;
+  font-size: 5.19rem;
+  letter-spacing: -0.147rem;
 }
 
 p {
-  font-size: 2.6rem;
-  line-height: 3.6rem;
+  font-size: 2.667rem;
   letter-spacing: -0.06rem;
+  line-height: 3.8rem;
+}
+
+header {
+padding: 40px 8.75% 32px;
+}
+
+.blurb p {
+  font-size: 3.513rem;
+  letter-spacing: -0.038rem;
+  line-height: 4.84rem;
 }
 
 .blurb {
   padding-right: 9%;
+  margin-bottom: 10.4%;
 }
 
 .scope ul {
@@ -733,25 +951,54 @@ nav li {
   font-size: 2.1rem;
 }
 
+.cta {
+padding: 8.5% 0% 10.5%;
+}
+
 }
 
 /*======================================
-  MEDIA QUERIES / LEVEL 6
+  MEDIA QUERIES / LEVEL 1450
   ======================================*/
 
 @media only screen and (min-width: 1441px) {
 
 h1 {
+  font-size: 9.133rem;
+  letter-spacing: -0.244rem;
+  line-height: 10.012rem;
   margin-right: 15%;
 }
 
+h2 {
+  font-size: 2.156rem;
+  letter-spacing: 0.3644rem;
+  margin-top: 8.112%;
+}
+
 h3 {
-  font-size: 5.5rem;
+  font-size: 5.349rem;
+  letter-spacing: -0.157rem;
+}
+
+p {
+  font-size: 2.709rem;
+  letter-spacing: -0.065rem;
+  line-height: 3.9rem;
+}
+
+header {
+padding: 40px 9.5% 32px;
 }
 
 .blurb p {
-  font-size: 3.6rem;
-  line-height: 5rem;
+  font-size: 3.619rem;
+  letter-spacing: -0.039rem;
+  line-height: 5.014rem;
+}
+
+.blurb {
+  margin-bottom: 10.2%;
 }
 
 .animated-svg {
@@ -771,7 +1018,124 @@ h3 {
 }
 
 .cta {
-max-width: 850px;
+padding: 8.25% 0% 10.25%;
+}
+
+}
+
+/*======================================
+  MEDIA QUERIES / LEVEL 1550
+  ======================================*/
+
+@media only screen and (min-width: 1550px) {
+
+h1 {
+  font-size: 9.5rem;
+  letter-spacing: -0.25rem;
+  line-height: 10.426rem;
+}
+
+h2 {
+  font-size:2.213rem;
+  letter-spacing: 0.3787rem;
+  margin-top: 8%;
+}
+
+h3 {
+  font-size: 5.508rem;
+  letter-spacing: -0.166rem;
+}
+
+h4 {
+  /* font-size: 2.8rem; */
+  /* letter-spacing: -0.03rem; */
+}
+
+p {
+  font-size: 2.75rem;
+  letter-spacing: -0.05rem;
+  line-height: 4rem;
+}
+
+header {
+padding: 40px 10.25% 32px;
+}
+
+.blurb p {
+  font-size: 3.726rem;
+  letter-spacing: -0.041rem;
+  line-height: 5.188rem;
+}
+
+.blurb {
+  margin-bottom: 10%;
+}
+
+.cta {
+padding: 8% 0% 10%;
+}
+
+}
+
+
+/*======================================
+  MEDIA QUERIES / LEVEL 1650
+  ======================================*/
+
+@media only screen and (min-width: 1650px) {
+
+h1 {
+  font-size: 9.833rem;
+  letter-spacing: -0.255rem;
+  line-height: 10.84rem;
+}
+
+h2 {
+  font-size:2.27rem;
+  letter-spacing: 0.393rem;
+  margin-top: 7.89%;
+}
+
+h3 {
+  font-size: 5.667rem;
+  letter-spacing: -0.176rem;
+}
+
+h4 {
+  /* font-size: 2.8rem; */
+  /* letter-spacing: -0.03rem; */
+}
+
+p {
+  font-size: 2.792rem;
+  letter-spacing: -0.075rem;
+  line-height: 4.1rem;
+}
+
+header {
+padding: 40px 11% 32px;
+}
+
+.intro {
+  padding: 0 11%;
+}
+
+.blurb p {
+  font-size: 3.832rem;
+  letter-spacing: -0.042rem;
+  line-height: 5.362rem;
+}
+
+.blurb {
+  margin-bottom: 9.8%;
+}
+
+.callout-blurb {
+  padding: 0 11%;
+}
+
+.cta {
+padding: 7.75% 0% 9.75%;
 }
 
 }
