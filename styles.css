@@ -931,6 +931,10 @@ header {
 padding: 40px 8.75% 32px;
 }
 
+.intro {
+  padding: 0px 8.75%;
+}
+
 .blurb p {
   font-size: 3.513rem;
   letter-spacing: -0.038rem;
@@ -989,6 +993,10 @@ p {
 
 header {
 padding: 40px 9.5% 32px;
+}
+
+.intro {
+  padding: 0px 9.5%;
 }
 
 .blurb p {
@@ -1061,6 +1069,10 @@ header {
 padding: 40px 10.25% 32px;
 }
 
+.intro {
+  padding: 0px 10.25%;
+}
+
 .blurb p {
   font-size: 3.726rem;
   letter-spacing: -0.041rem;
@@ -1072,7 +1084,7 @@ padding: 40px 10.25% 32px;
 }
 
 .cta {
-padding: 8% 0% 10%;
+padding: 8% 0% 9.75%;
 }
 
 }
@@ -1117,6 +1129,10 @@ padding: 40px 11% 32px;
 }
 
 .intro {
+  padding: 0px 11%;
+}
+
+.intro {
   padding: 0 11%;
 }
 
@@ -1135,7 +1151,45 @@ padding: 40px 11% 32px;
 }
 
 .cta {
-padding: 7.75% 0% 9.75%;
+padding: 7.75% 0% 9.5%;
+}
+
+}
+
+
+/*======================================
+  MEDIA QUERIES / LEVEL 1750
+  ======================================*/
+
+@media only screen and (min-width: 1750px) {
+
+.callout-image {
+  padding: 9% 0;
+}
+
+.callout-image img {
+  width: 40%;
+}
+
+}
+
+
+/*======================================
+  MEDIA QUERIES / LEVEL 1950
+  ======================================*/
+
+@media only screen and (min-width: 1950px) {
+
+.callout-image {
+  padding: 8% 0;
+}
+
+.callout-image img {
+  width: 35%;
+}
+
+.cta {
+padding: 7% 0% 8.5%;
 }
 
 }
