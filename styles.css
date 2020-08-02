@@ -44,6 +44,8 @@ body {
   background-color: #4A1F5B;
   color: #fff;
   font-family: 'Untitled Regular';
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -105,15 +107,19 @@ h4 {
 
 
 
+
 /*======================================
   LAYOUT STYLES
   ======================================*/
 
-header {
-  background: linear-gradient(to top, rgba(74,31,91,1), rgba(74,31,91,0.3)),
-              url('img/coop/coop-header.jpg') no-repeat center;
-  background-size: cover;
-  padding: 40px 8% 0;
+/* Common */
+
+body {
+  background-color: rgb(25,25,25);
+  color: #fff;
+  font-family: 'Untitled Regular';
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -123,11 +129,6 @@ img {
 
 .intro {
   padding: 0px 8%;
-}
-
-h2 {
-  /* margin: 14% 0 25px; */
-  color: #9e6bae;
 }
 
 .scope ul {
@@ -140,7 +141,7 @@ h2 {
   line-height: 2.2rem;
   display: inline-block;
   padding: 0 10px 5px 0;
-  color: #9e6bae;
+  /* color: #9e6bae; */
 }
 
 .grid {
@@ -154,16 +155,16 @@ h2 {
 
 .animated-svg {
   margin: auto;
-  padding: 15% 0;
+  padding: 15%;
   background-color: #007934;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.animated-svg img {
+/* .animated-svg img {
   width: 55%;
-}
+} */
 
 .callout {
   padding: 0;
@@ -208,7 +209,7 @@ h2 {
   font-size: 0.5rem;
   line-height: 1.15rem; */
   text-align: center;
-  border-bottom: 1px solid #9e6bae;
+  /* border-bottom: 1px solid #9e6bae; */
 }
 
 .credits p {
@@ -231,15 +232,15 @@ h2 {
   display: inline-block;
   padding: 20px 65px;
   margin: 30px 0 20px;
-  border: 4px solid #9e6bae;
+  /* border: 4px solid #9e6bae; */
   border-radius: 500px;
   opacity: 1;
   transition: 0.25s;
 }
 
-.button:hover {
+/* .button:hover {
   background-color: rgba(94,39,117,0.3);
-}
+} */
 
 .cta-email p.small {
   font-size: 1.5rem;
@@ -257,36 +258,140 @@ h2 {
   opacity: 0.8;
 } */
 
-.back,
-.next {
+/* .project-nav .is-half {
   width: 100%;
   height: 120px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, rgba(30,30,30,0.9), rgba(30,30,30,0.9)),
-              url(img/coop/coop-header.jpg) no-repeat center;
+  background: url(img/coop/coop-header.jpg) no-repeat center;
   background-size: cover;
+} */
+
+.project-nav {
+  /* font-size: 2.8rem; */
+  /* text-align: center; */
 }
 
-.back:hover,
+.project-nav a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.project-nav a::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: "";
+  background: rgb(25,25,25);
+  opacity: 0.9;
+  transition: 0.2s;
+}
+
+.project-nav a:hover::before {
+  opacity: 0.95;
+}
+
+/* .back:hover,
 .next:hover {
   background: linear-gradient(to right, rgba(30,30,30,0.95), rgba(30,30,30,0.95)),
               url(img/coop/coop-header.jpg) no-repeat center;
   background-size: cover;
+} */
+
+.project-nav h4,
+.project-nav img {
+  position: relative;
+  display: inline-block;
+  z-index: 100;
 }
 
-.back h4,
-.next h4 {
-  margin: 0 20px;
+.project-nav h4 {
+  padding: 0 20px 0 0;
 }
 
-.back img,
-.next img {
-  height: 35px;
-  width: 35px;
+.project-nav img {
+  height: 30px;
+  width: 30px;
 }
+
+
+/* Co+op, Stronger Together */
+
+.coop {
+background-color: #4A1F5B;
+}
+
+.coop header {
+  background: linear-gradient(to top, rgba(74,31,91,1), rgba(74,31,91,0.3)),
+              url('img/coop/coop-header.jpg') no-repeat center;
+  background-size: cover;
+  padding: 40px 8% 0px;
+}
+
+.coop h2 {
+  color: #9e6bae;
+}
+
+.coop .scope li {
+  color: #9e6bae;
+}
+
+.coop .cta-email a.button {
+  border: 4px solid #9e6bae;
+}
+
+.coop .button:hover {
+  background-color: rgba(94,39,117,0.3);
+}
+
+.coop .credits {
+  border-bottom: 1px solid #9e6bae;
+}
+
+
+
+/* Sixpoint */
+
+.sixpoint {
+  background-color: #371c00;
+}
+
+.sixpoint header {
+  background: linear-gradient(to top, rgba(55,28,0,1), rgba(55,28,0,0.3)),
+              url('img/coop/coop-header.jpg') no-repeat center;
+  background-size: cover;
+  padding: 40px 8% 0px;
+}
+
+
+.sixpoint h2 {
+  color: #e25712;
+}
+
+.sixpoint .scope li {
+  color: #e25712;
+}
+
+.sixpoint .cta-email a.button {
+  border: 4px solid #5a3216;
+}
+
+.sixpoint .button:hover {
+  background-color: rgba(72,36,0,0.3);
+}
+
+.sixpoint .credits {
+  border-bottom: 1px solid #5a3216;
+}
+
 
 
 /*======================================
@@ -322,7 +427,7 @@ nav a:hover {
   ======================================*/
 
 footer {
-  background-color: rgb(30,30,30);
+  background-color: rgb(25,25,25);
   padding: 30px 0 40px;
   text-align: center;
   font-size: 1.1rem;
@@ -361,9 +466,9 @@ nav {
 
 @media only screen and (min-width: 350px) {
 
-/* h2 {
-  margin-top: 14%;
-} */
+h2 {
+  margin-top: 12.5%;
+}
 
 .scope ul {
   margin-bottom: 16%;
@@ -388,7 +493,7 @@ p {
 @media only screen and (min-width: 450px) {
 
 h2 {
-  margin-top: 12.148%;
+  margin-top: 11.25%;
 }
 
 h3 {
@@ -424,7 +529,7 @@ h1 {
   }
 
 h2 {
-  margin-top: 11.296%;
+  margin-top: 10%;
 }
 
 h3 {
@@ -452,6 +557,14 @@ p {
   MEDIA QUERIES / LEVEL 650
   ======================================*/
 
+@media only screen and (max-width: 649px) {
+
+.project-nav .is-half {
+  width: 100%;
+}
+
+}
+
 @media only screen and (min-width: 650px) {
 
 h1 {
@@ -464,7 +577,7 @@ h2 {
   font-size: 1.7rem;
   letter-spacing: 0.25rem;
   /* margin: 9% 0 25px; */
-  margin-top: 10.444%;
+  margin-top: 9.5%;
 }
 
 h3 {
@@ -513,15 +626,15 @@ p {
 
 /* Back/Next Float */
 
-.back {
-  width: 50%;
-  float: left;
+/* .back-next .is-half  {
+  width: 50%; */
+  /* float: left; */
 }
 
-.next {
+/* .next {
   width: 50%;
   float: right;
-}
+} */
 
 }
 
@@ -540,7 +653,7 @@ p {
   h2 {
     font-size: 1.757rem;
     letter-spacing: 0.2643rem;
-    margin-top: 9.592%;
+    margin-top: 9%;
   }
 
   h3 {
@@ -595,7 +708,7 @@ h1 {
 h2 {
   font-size: 1.814rem;
   letter-spacing: 0..2786rem;
-  margin-top: 8.74%;
+  margin-top: 8.5%;
 }
 
 h3 {
@@ -626,6 +739,14 @@ p {
   MEDIA QUERIES / LEVEL 950
   ======================================*/
 
+@media only screen and (max-width: 949px) {
+
+.flexible .is-half {
+  width: 100%;
+}
+
+}
+
 @media only screen and (min-width: 950px) {
 
 h1 {
@@ -638,7 +759,7 @@ h1 {
 h2 {
   font-size: 1.871rem;
   letter-spacing: 0.2929rem;
-  margin-top: 7.883%;
+  margin-top: 8.0%;
 }
 
 h3 {
@@ -724,7 +845,7 @@ align-items: center;
 
 /* Image 50/50 float */
 
-.float-50-left {
+/* .float-50-left {
   width: 50%;
   float: left;
 }
@@ -732,7 +853,7 @@ align-items: center;
 .float-50-right {
   width: 50%;
   float: right;
-}
+} */
 
 .cta {
   max-width: 700px;
@@ -783,7 +904,7 @@ h1 {
 h2 {
   font-size: 1.928rem;
   letter-spacing: 0.30725rem;
-  /* margin-top: 7.883%; */
+  margin-top: 7.667%;
 }
 
 h3 {
@@ -832,12 +953,12 @@ p {
 }
 
 .animated-svg {
-  padding: 12% 0;
+  padding: 18%;
 }
 
-.animated-svg img {
+/* .animated-svg img {
   width: 45%;
-}
+} */
 
 }
 
@@ -856,7 +977,7 @@ h1 {
 h2 {
   font-size: 1.985rem;
   letter-spacing: 0.322rem;
-  margin-top: 7.152%;
+  margin-top: 7.334%;
 }
 
 h3 {
@@ -892,13 +1013,13 @@ h1 {
   font-size: 8.5rem;
   letter-spacing: -0.233rem;
   line-height: 9.184rem;
-  margin-right: 15%;
+  margin-right: 25%;
 }
 
 h2 {
   font-size: 2.042rem;
   letter-spacing: 0.3358rem;
-  margin-top: 6.421%;
+  margin-top: 7%;
 }
 
 h3 {
@@ -944,7 +1065,7 @@ h1 {
 h2 {
   font-size: 2.1rem;
   letter-spacing: 0.35rem;
-  margin-top: 5.69%;
+  margin-top: 6.668%;
 }
 
 h3 {
@@ -959,7 +1080,7 @@ p {
 }
 
 header {
-padding: 40px 8.75% 32px;
+padding: 40px 8.75% 0px;
 }
 
 .intro {
@@ -1007,7 +1128,7 @@ h1 {
 h2 {
   font-size: 2.156rem;
   letter-spacing: 0.3644rem;
-  margin-top: 4.959%;
+  margin-top: 6.335%;
 }
 
 h3 {
@@ -1022,7 +1143,7 @@ p {
 }
 
 header {
-padding: 40px 9.5% 32px;
+padding: 40px 9.5% 0px;
 }
 
 .intro {
@@ -1040,12 +1161,12 @@ padding: 40px 9.5% 32px;
 }
 
 .animated-svg {
-  padding: 11% 0;
+  padding: 20%;
 }
 
-.animated-svg img {
+/* .animated-svg img {
   width: 40%;
-}
+} */
 
 .callout-image {
   padding: 10% 0;
@@ -1076,7 +1197,7 @@ h1 {
 h2 {
   font-size:2.213rem;
   letter-spacing: 0.3787rem;
-  margin-top: 4.228%;
+  margin-top: 6%;
 }
 
 h3 {
@@ -1096,7 +1217,7 @@ p {
 }
 
 header {
-padding: 40px 10.25% 32px;
+padding: 40px 10.25% 0px;
 }
 
 .intro {
@@ -1135,7 +1256,7 @@ h1 {
 h2 {
   font-size:2.27rem;
   letter-spacing: 0.393rem;
-  margin-top: 3.5%;
+  /* margin-top: 3.5%; */
 }
 
 h3 {
@@ -1155,7 +1276,7 @@ p {
 }
 
 header {
-padding: 40px 11% 32px;
+padding: 40px 11% 0px;
 }
 
 .intro {
